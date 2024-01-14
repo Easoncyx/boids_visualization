@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boids Algorithm Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="boidsCanvas"></canvas>
+        <div class="controls">
+            <label for="speedRange">Speed: </label>
+            <input type="range" id="speedRange" min="1" max="10" step="0.1">
+            <label for="perceptionRange">Perception Radius: </label>
+            <input type="range" id="perceptionRange" min="10" max="200" step="1">
+            <label for="maxAcceleration">Acceleration: </label>
+            <input type="range" id="maxAcceleration" min="0.1" max="2" value="0.1" step="0.1">
+            <button id="restartButton">Restart Simulation</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
